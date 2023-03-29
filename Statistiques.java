@@ -6,55 +6,52 @@ import java.util.*;
  */
 public class Statistiques {
 
-    /**
-     * Default constructor
-     */
-    public Statistiques() {
+    private double stat_geographiques;
+    private double stat_temporelle;
+  
+    //Constructeur
+    public Statistiques(double stat_geographiques, double stat_temporelle) {
+        this.stat_geographiques = stat_geographique;
+        this.stat_temporelle = stat_temporelle;
     }
 
-    /**
-     * 
-     */
-    private void stat_geographiques;
-
-    /**
-     * 
-     */
-    private void stat_temporelle;
-
-    /**
-     * 
-     */
-    public void calculer_moyenne_qt_depot_quartier() {
-        // TODO implement here
+    //Getters et Setters
+    public double getStatGeographiques() {
+        return stat_geographiques;
     }
 
-    /**
-     * 
-     */
-    public void calculer_moyenne_heure_depot() {
-        // TODO implement here
+    public void setStatGeographiques(double stat_geographiques) {
+        this.stat_geographiques = stat_geographiques;
     }
 
-    /**
-     * 
-     */
-    public void etablir_poubelle_moins_remplie() {
-        // TODO implement here
+    public double getStatTemporelle() {
+        return stat_temporelle;
     }
 
-    /**
-     * 
-     */
-    public void etablir_poubelle_trop_remplie() {
-        // TODO implement here
+    public void setStatTemporelle(double stat_temporelle) {
+        this.stat_temporelle = stat_temporelle;
+    }
+    
+     // Méthodes
+    public double calculerMoyenneQtDepotQuartier0() {
+        // TODO: Implémenter le calcul de la moyenne de la quantité de dépôts dans le quartier 0
+        return 0.0;
     }
 
-    /**
-     * 
-     */
-    public void modifier_freq_ramassage() {
-        // TODO implement here
+    public double calculerMoyenneHeureDepot0() {
+        // TODO: Implémenter le calcul de la moyenne de l'heure de dépôt dans le quartier 0
+        return 0.0;
     }
 
+    public void etablirPoubelleMoinsRemplie0() {
+        // TODO: Implémenter la méthode pour établir la poubelle la moins remplie dans le quartier 0
+    }
+
+    public void etablirPoubelleTropRemplie0() {
+        // TODO: Implémenter la méthode pour établir la poubelle la plus remplie dans le quartier 0
+    }
+
+    public void modifierFreqRamassage0() {
+        // TODO: Implémenter la méthode pour modifier la fréquence de ramassage dans le quartier 0
+    }
 }
