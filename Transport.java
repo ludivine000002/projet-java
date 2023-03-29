@@ -1,106 +1,88 @@
-
 import java.util.*;
 
-/**
- * 
- */
-public class Transport {
+public class transport {
 
-    /**
-     * Default constructor
-     */
-    public Transport() {
+    public transport(Integer id_transport,String liste_poubelle, String liste_centre, Date horaire_passage) {
+    	this.horaire_passage=horaire_passage;
+    	this.id_transport=id_transport;
+    	this.liste_centre=liste_centre;
+    	this.liste_poubelle=liste_poubelle;
+    	
     }
 
-    /**
-     * 
-     */
     private Integer id_transport;
 
-    /**
-     * 
-     */
     private String liste_poubelle;
 
-    /**
-     * 
-     */
     private String liste_centre;
 
-    /**
-     * 
-     */
-    private Date horaire_passage;
+    public Integer getId_transport() {
+		return id_transport;
+	}
 
-    /**
-     * @return
-     */
+	public String getListe_poubelle() {
+		return liste_poubelle;
+	}
+
+	public String getListe_centre() {
+		return liste_centre;
+	}
+
+	public Date getHoraire_passage() {
+		return horaire_passage;
+	}
+
+	public void setId_transport(Integer id_transport) {
+		this.id_transport = id_transport;
+	}
+
+	public void setListe_poubelle(String liste_poubelle) {
+		this.liste_poubelle = liste_poubelle;
+	}
+
+	public void setListe_centre(String liste_centre) {
+		this.liste_centre = liste_centre;
+	}
+
+	public void setHoraire_passage(Date horaire_passage) {
+		this.horaire_passage = horaire_passage;
+	}
+
+	private Date horaire_passage;
+
     public String deplacer() {
-        // TODO implement here
         return "";
     }
 
-    /**
-     * @return
-     */
     public Integer get_id_transport() {
-        // TODO implement here
         return null;
     }
 
-    /**
-     * @return
-     */
     public String getListePoubelle() {
-        // TODO implement here
         return "";
     }
 
-    /**
-     * @return
-     */
     public String getListeCentre() {
-        // TODO implement here
         return "";
     }
 
-    /**
-     * @return
-     */
     public Date getHorairePassage() {
-        // TODO implement here
         return null;
     }
 
-    /**
-     * @return
-     */
     public Integer setIdTransport() {
-        // TODO implement here
         return null;
     }
 
-    /**
-     * @return
-     */
     public String setListePoubelle() {
-        // TODO implement here
         return "";
     }
 
-    /**
-     * @return
-     */
     public String setListeCentre() {
-        // TODO implement here
         return "";
     }
 
-    /**
-     * @return
-     */
     public Date setHorairePassage() {
-        // TODO implement here
         return null;
     }
 
