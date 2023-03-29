@@ -1,226 +1,170 @@
 
+
 import java.util.*;
 
-/**
- * 
- */
+/*class menages */
 public class Menages {
 
-    /**
-     * Default constructor
-     */
-    public Menages() {
-    }
+/*constructeur du menage */
+	
+    public Menages( Integer id_menage,String adresse_menage, Integer pt_fidelite,String nom) {
+    	this.id_menage = id_menage;
+    	this.adresse_menage = adresse_menage;
+    	this.pt_fidelite = pt_fidelite;
+    	this.pt_fidelite = pt_fidelite;}
+    	
+    	 /*attributs du menage */
+    	 private Integer id_menage;
+    	 private String adresse_menage;
+         protected String nom;
+    	 protected Integer pt_fidelite;
+    	 
+    	 
+    	 /*getter et setter du menage */
+    	    public Integer getId_menage() {
+    			return id_menage;
+    		}
 
-    /**
-     * 
-     */
-    private Integer id_menage;
+    		public void setId_menage(Integer id_menage) {
+    			this.id_menage = id_menage;
+    		}
 
-    /**
-     * 
-     */
-    private String adresse_menage;
+    		public String getAdresse_menage() {
+    			return adresse_menage;
+    		}
 
-    /**
-     * 
-     */
-    public boolean tri;
+    		public void setAdresse_menage(String adresse_menage) {
+    			this.adresse_menage = adresse_menage;
+    		}
 
-    /**
-     * 
-     */
-    protected Integer pt_fidelité;
+    		public String getNom() {
+    			return nom;
+    		}
+    		
+    		public void setNom(String nom) {
+    			this.nom = nom;
+    		}
+    		
+    		public Integer getPt_fidelite() {
+    			return pt_fidelite;
+    		}
 
-    /**
-     * 
-     */
-    public void id poubelle;
+    		public void setPt_fidelite(Integer pt_fidelite) {
+    			this.pt_fidelite = pt_fidelite;
+    		}
 
-    /**
-     * 
-     */
-    public void heure depot;
+    	 
+    	
+    	 /*
+    	 public void id poubelle;
+    	 
+    	 public void heure depot;
+    	 public void type dechet;
+    	 public void plastique;
+    	 public void metal;
+    	 public void verre;
+    	 public void carton;
+        
 
-    /**
-     * 
-     */
-    public void type dechet;
+        
+       
 
-    /**
-     * 
-     */
-    public void plastique;
+        
+        
+        /*méthodes*/
+    
 
-    /**
-     * 
-     */
-    public void metal;
-
-    /**
-     * 
-     */
-    public void verre;
-
-    /**
-     * 
-     */
-    public void carton;
-
-    /**
-     * 
-     */
-    protected String nom;
-
-    /**
-     * @return
-     */
+  /*
     public Integer convertir_bons_achat() {
-        // TODO implement here
+       
         return null;
-    }
+        }
 
     /**
      * @param nom 
      * @return
      */
+    	 
+    	 /*
     public Menages creer_compte(String nom) {
-        // TODO implement here
         return null;
     }
 
-    /**
-     * @return
-     */
     public date consulter_historique_depot() {
-        // TODO implement here
+        
         return null;
     }
 
-    /**
-     * 
-     */
-    public void Operation1() {
-        // TODO implement here
-    }
 
-    /**
-     * 
-     */
     public void get heure depot() {
         // TODO implement here
     }
 
-    /**
-     * @return
-     */
     public Boolean deposer_verre() {
-        // TODO implement here
         return null;
     }
 
-    /**
-     * @return
-     */
     public Boolean deposer_carton() {
-        // TODO implement here
-        return null;
+       return null;
     }
 
-    /**
-     * @return
-     */
     public Boolean deposer_dechet() {
-        // TODO implement here
         return null;
     }
 
-    /**
-     * @return
-     */
     public Boolean deposer_papier() {
-        // TODO implement here
-        return null;
+       return null;
     }
 
-    /**
-     * @return
-     */
     public Integer consulter_solde() {
-        // TODO implement here
         return null;
     }
 
-    /**
-     * @return
-     */
     public Integer convertir_reductions() {
-        // TODO implement here
         return null;
     }
 
-    /**
-     * @return
-     */
     public Integer getIdMenage() {
-        // TODO implement here
         return null;
     }
 
-    /**
-     * @return
-     */
     public Integer setIdMenage() {
-        // TODO implement here
+       return null;
+    }
+
+    public String getAdresseMenage() {
         return null;
     }
 
-    /**
-     * @return
-     */
-    public string getAdresseMenage() {
-        // TODO implement here
+    public String setAdresseMenage() {
         return null;
     }
 
-    /**
-     * @return
-     */
-    public string setAdresseMenage() {
-        // TODO implement here
-        return null;
-    }
-
-    /**
-     * @return
-     */
     public Integer getpointFidelite() {
-        // TODO implement here
         return null;
     }
 
-    /**
-     * @return
-     */
     public Integer setpointFidelite() {
-        // TODO implement here
         return null;
     }
 
-    /**
-     * @return
-     */
-    public string getNom() {
-        // TODO implement here
-        return null;
+    public String getNom() {
+       return null;
     }
 
-    /**
-     * @return
-     */
-    public string setNom() {
-        // TODO implement here
+    public String setNom() {
         return null;
     }
+    
+    */
+    
 
-}
+
+	public class Depot {
+        private TypeDepot type;
+        private Date heure;
+
+        public Depot(TypeDepot type, Date heure) {
+            this.type = type;
+            this.heure = heure;
+        }
