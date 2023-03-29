@@ -1,57 +1,24 @@
 
-import java.util.*;
+		// La classe Carton qui hérite de la classe Dechet
+				public class Carton extends Dechets {
+				
+					/*attribut*/
+					private Float pc;
+					
+				    // Constructeur
+				    public Carton(String type,Float poids,float pc) {
+				        super(type,poids);
+				        this.pc = pc;
+				    }
 
-/**
- * 
- */
-public class Dechets {
+				    /*getter et setter*/
+				    
+				    public float Getpc() {
+				        return pc;
+				    }
 
-    /**
-     * Default constructor
-     */
-    public Dechets() {
-    }
-
-    /**
-     * 
-     */
-    private String type;
-
-    /**
-     * 
-     */
-    private Float poids;
-
-    /**
-     * @return
-     */
-    public Float getPoids() {
-        // TODO implement here
-        return null;
-    }
-
-    /**
-     * @return
-     */
-    public String getType() {
-        // TODO implement here
-        return "";
-    }
-
-    /**
-     * @return
-     */
-    public Float setPoids() {
-        // TODO implement here
-        return null;
-    }
-
-    /**
-     * @return
-     */
-    public String setType() {
-        // TODO implement here
-        return "";
-    }
-
-}
+				    public void setPv(float pc) {
+				        this.pc = pc;
+				    }
+				}
+					
