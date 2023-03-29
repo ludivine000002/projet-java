@@ -1,126 +1,73 @@
+package poubelle;
 
 import java.util.*;
 
-/**
- * 
- */
-public class Commerces {
+public class commerces {
 
-    /**
-     * Default constructor
-     */
-    public Commerces() {
-    }
+    
+    
+    public commerces(Integer id_commerces, String nom, String liste_prod_bonus) {
+		super();
+		this.id_commerces = id_commerces;
+		this.nom = nom;
+		this.liste_prod_bonus = liste_prod_bonus;
+	}
 
-    /**
-     * 
-     */
-    private Integer id_commerces;
 
-    /**
-     * 
-     */
+	private Integer id_commerces;
     private String nom;
-
-    /**
-     * 
-     */
     private String liste_prod_bonus;
+    
+    public Integer getId_commerces() {
+		return id_commerces;
+	}
 
-    /**
-     * 
-     */
-    public void nom contrat partneariat;
+	public String getListe_prod_bonus() {
+		return liste_prod_bonus;
+	}
 
-    /**
-     * 
-     */
-    public void debut contrat;
+	public String getNom() {
+		return nom;
+	}
 
-    /**
-     * 
-     */
-    public void fin contart;
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
 
-    /**
-     * 
-     */
-    public void Attribute1;
+	public void setId_commerces(Integer id_commerces) {
+		this.id_commerces = id_commerces;
+	}
 
-    /**
-     * 
-     */
-    public void renouveller contart() {
-        // TODO implement here
+	public void setListe_prod_bonus(String liste_prod_bonus) {
+		this.liste_prod_bonus = liste_prod_bonus;
+	}
+
+	/*
+    public void nom_contrat() {
+    	
     }
 
-    /**
-     * 
-     */
+    public void debut_contrat() {
+    	
+    }
+
+    public void fin_contrat(){
+    	
+    }
+
+    public void renouveller_contrat() {
+    }
+
+  
     public void verifier_si_prod_dans_contrat() {
-        // TODO implement here
     }
 
-    /**
-     * 
-     */
     public void verifier_bons_achat() {
-        // TODO implement here
     }
 
-    /**
-     * 
-     */
+    
     public void verifier_reduction() {
-        // TODO implement here
     }
-
-    /**
-     * @return
-     */
-    public Integer setIdCommerces() {
-        // TODO implement here
-        return null;
-    }
-
-    /**
-     * @return
-     */
-    public Integer getIdCommerces() {
-        // TODO implement here
-        return null;
-    }
-
-    /**
-     * @return
-     */
-    public string getNom() {
-        // TODO implement here
-        return null;
-    }
-
-    /**
-     * @return
-     */
-    public string setNom() {
-        // TODO implement here
-        return null;
-    }
-
-    /**
-     * @return
-     */
-    public string getListeProdBonus() {
-        // TODO implement here
-        return null;
-    }
-
-    /**
-     * @return
-     */
-    public string setListeProdBonus() {
-        // TODO implement here
-        return null;
-    }
+	*/
 
 }
